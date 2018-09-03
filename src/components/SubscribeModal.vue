@@ -3,7 +3,6 @@
     <i @click="$emit('hideModal')" class="hoverable cancel fas fa-times-circle"></i>
     <h3><strong>Subscribe!</strong></h3>
     <p class="invitation-text">Consider <strong>subscribing</strong> to our mailing list.</p>
-    <!--<p v-if="errorMessage" class="invitation-text">{{errorMessage}}</p>-->
     <input v-model='emailAddress'
            @keyup.enter="send()"
            class="email"
@@ -123,10 +122,12 @@
       font-size: 3rem;
       color: coral;
     }
+
     .invitation-text {
       grid-row: 2;
       grid-column: 2;
       text-align: justify;
+      font-size: 1.1rem;
     }
 
     .email {
@@ -137,8 +138,8 @@
       min-height: 80%;
       line-height: 1.5rem;
       text-align: center;
+      border-radius: 0.5rem;
       font-size: 1.5rem;
-      border-radius: 0.5rem
     }
 
 
@@ -147,7 +148,7 @@
       grid-column: 2;
 
       width: 102%;
-      height: 85%;
+      height: 100%;
       border: 0.4rem solid lightcoral;
       font-family: inherit;
       font-size: inherit;
@@ -155,7 +156,7 @@
       color: whitesmoke;
       background-color: lightcoral;
       cursor: pointer;
-      padding: 25px 80px;
+      padding: auto auto;
       display: inline-block;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -194,5 +195,4 @@
       font-size: 80%;
     }
   }
-
 </style>
