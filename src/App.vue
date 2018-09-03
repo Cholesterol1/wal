@@ -127,7 +127,10 @@
   html {
     background-image: linear-gradient(to right, rgba(255, 167, 84, 0.63), rgba(101, 255, 18, 0.68));
     font-family: Montserrat, sans-serif;
+    height: 100vh;
+    width: 100vw;
   }
+
   #app {
     display: grid;
     grid-template-columns: 1fr 500px 1fr;

@@ -91,7 +91,7 @@
   }
   .subscribe-modal {
     max-width: 90%;
-    max-height: 75%;
+    max-height: 65%;
     right: 0;
     left: 0;
     margin-top: 10%;
@@ -99,7 +99,7 @@
     margin-right: auto;
     position: absolute;
     width: 600px;
-    height: 600px;
+    min-height: 400px;
     z-index: 1;
     background-color: rgba(255, 243, 205, 0.94);
     border-radius: 1rem;
@@ -126,6 +126,7 @@
     .invitation-text {
       grid-row: 2;
       grid-column: 2;
+      text-align: justify;
     }
 
     .email {
@@ -179,6 +180,18 @@
         position: relative;
         top: 3px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .subscribe-modal {
+      font-size: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .subscribe-modal {
+      font-size: 80%;
     }
   }
 
